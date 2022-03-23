@@ -23,16 +23,20 @@ def informe(padawans):
     for padawan in padawans:
         #print('\n')
         print('*'*40)
+        print(f'Ada_kack')
         for key in padawan:
             print(f'{key}: {padawan[key]}')
       
+
 padawans = [] #lista que contiene los diccionarios
+
 while(True):
     print('_'*50)
     print("1. Añadir una padawan ")
     print("2. Lista de participantes ")
     print("3. Salir")
     opcion = int(input("Elige una opción:  "))
+
     if opcion == 1:
         padawan = registro()
         padawans.append(padawan)
